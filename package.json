@@ -1,0 +1,24 @@
+{
+  "name": "alexa-convert-units",
+  "version": "1.0.0",
+  "description": "Alexa skill for converting units",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./src/tests/test.js",
+    "deploy": "yarn run zip && yarn run upload",
+    "upload": "aws lambda update-function-code --function-name 'convertUnits' --zip-file fileb://./index.zip",
+    "zip": "zip -r ./index.zip . -x 'package.json' -x '*.git*' -x 'src/tests/*' -x 'src/ressources/*' -x 'yarn*'"
+  },
+  "keywords": [
+    "alexa",
+    "skill",
+    "convert",
+    "units"
+  ],
+  "author": "Moritz Rupp",
+  "license": "MIT",
+  "dependencies": {
+    "alexa-sdk": "^1.0.6",
+    "convert-units": "^2.3.1"
+  }
+}

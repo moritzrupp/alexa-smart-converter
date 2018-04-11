@@ -1,0 +1,219 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "schlauer konverter",
+            "intents": [
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "ConvertUnitIntent",
+                    "slots": [
+                        {
+                            "name": "value",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "fromunit",
+                            "type": "units"
+                        },
+                        {
+                            "name": "tounit",
+                            "type": "units"
+                        }
+                    ],
+                    "samples": [
+                        "Konvertiere {value} von {fromunit} in {tounit}",
+                        "Konvertiere {value} {fromunit} in {tounit}",
+                        "Konvertiere {value} {fromunit} nach {tounit}",
+                        "Was sind {value} {fromunit} in {tounit}",
+                        "{value} {fromunit} in {tounit}",
+                        "{value} {fromunit} nach {tounit}",
+                        "Wandle {value} {fromunit} in {tounit} um",
+                        "Was {value} {fromunit} in {tounit} sind",
+                        "Wie viel {tounit} sind {value} {fromunit}"
+                    ]
+                },
+                {
+                    "name": "MeasuresIntent",
+                    "slots": [],
+                    "samples": [
+                        "welche einheiten kannst du konvertieren",
+                        "welche einheiten kannst du umwandeln",
+                        "welche einheiten werden unterstützt",
+                        "was kannst du",
+                        "welche maßeinheiten kennst du",
+                        "was für einheiten werden unterstützt",
+                        "was für einheiten kannst du umwandeln",
+                        "was für einheiten kannst du konvertieren",
+                        "was kannst du für mich konvertieren",
+                        "was kannst du für mich umwandeln"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "units",
+                    "values": [
+                        {
+                            "id": "mm",
+                            "name": {
+                                "value": "millimeter"
+                            }
+                        },
+                        {
+                            "id": "cm",
+                            "name": {
+                                "value": "centimeter",
+                                "synonyms": [
+                                    "zentimeter"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "m",
+                            "name": {
+                                "value": "meter"
+                            }
+                        },
+                        {
+                            "id": "in",
+                            "name": {
+                                "value": "zoll",
+                                "synonyms": [
+                                    "inch"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "ft",
+                            "name": {
+                                "value": "fuß"
+                            }
+                        },
+                        {
+                            "id": "mi",
+                            "name": {
+                                "value": "meilen"
+                            }
+                        },
+                        {
+                            "id": "ft-us",
+                            "name": {
+                                "value": "amerikanische fuß"
+                            }
+                        },
+                        {
+                            "id": "mcg",
+                            "name": {
+                                "value": "mikrogramm",
+                                "synonyms": [
+                                    "microgramm"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "mg",
+                            "name": {
+                                "value": "milligram"
+                            }
+                        },
+                        {
+                            "id": "g",
+                            "name": {
+                                "value": "gramm"
+                            }
+                        },
+                        {
+                            "id": "kg",
+                            "name": {
+                                "value": "kilogramm"
+                            }
+                        },
+                        {
+                            "id": "oz",
+                            "name": {
+                                "value": "unze",
+                                "synonyms": [
+                                    "unzen"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "lb",
+                            "name": {
+                                "value": "pfund"
+                            }
+                        },
+                        {
+                            "id": "C",
+                            "name": {
+                                "value": "celsius",
+                                "synonyms": [
+                                    "grad celsius"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "F",
+                            "name": {
+                                "value": "fahrenheit",
+                                "synonyms": [
+                                    "grad fahrenheit"
+                                ]
+                            }
+                        },
+                        {
+                            "id": "K",
+                            "name": {
+                                "value": "kelvin"
+                            }
+                        },
+                        {
+                            "id": "m/s",
+                            "name": {
+                                "value": "meter pro sekunde"
+                            }
+                        },
+                        {
+                            "id": "km/h",
+                            "name": {
+                                "value": "kilometer pro stunde",
+                                "synonyms": [
+                                    "k. m. h."
+                                ]
+                            }
+                        },
+                        {
+                            "id": "m/h",
+                            "name": {
+                                "value": "meter pro stunde"
+                            }
+                        },
+                        {
+                            "id": "knot",
+                            "name": {
+                                "value": "knoten"
+                            }
+                        },
+                        {
+                            "id": "ft/s",
+                            "name": {
+                                "value": "fuß pro sekunde"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
