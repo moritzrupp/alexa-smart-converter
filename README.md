@@ -1,6 +1,7 @@
 # Smart Converter Alexa skill
 
-This project is a simple Alexa skill for converting units. German is the only language currently implemented. It can currently convert the following units:
+This project is a simple Alexa skill for converting units. German is the only language currently implemented.
+It can currently convert the following units:
 
  - Length:
    - mm (millimeter)
@@ -34,7 +35,8 @@ As this skill was only developed for showcase purposes, it is currently not depl
 
 ## Development
 
-If you want to further develop this skill, feel free to do so. Pull requests are welcome.
+The skill is a showcase and not actively developed. Therefore, the repository is read-only and in archive mode. 
+If you want to further develop this skill or build on top of it, feel free to fork the repository.
 
 ### Installation
 
@@ -70,10 +72,6 @@ Once all values are in place, you can start testing the skill:
 ```bash
 $ yarn test
 ```
-
-## Contact
-
-If you have any questions or problems, feel free to open an [issue](https://github.com/moritzrupp/alexa-smart-converter/issues/new).
 
 ## Acknowledgements
 
